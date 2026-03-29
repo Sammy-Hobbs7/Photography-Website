@@ -1,0 +1,244 @@
+/* --- Base --- */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f7f3f0;
+  color: #222;
+}
+
+section {
+  padding: 80px 60px;
+}
+
+/* --- Header --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d8c6bb;
+  padding: 20px 80px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  height: 100px; /* fixed container height */
+  display: flex;
+  align-items: center; /* vertically center logo inside container */
+}
+
+.logo-container img {
+  max-height: 100%; /* fills container but no bigger */
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: #8c1d40;
+  color: white;
+}
+
+/* --- Hero Section --- */
+.hero {
+  height: 600px; /* adjust for desired hero height */
+  background-image: url('images/heroimage.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-overlay {
+  background-color: rgba(216, 198, 187, 0.6); /* 0.6 = 60% opacity */
+  padding: 40px;
+  border-radius: 15px;
+  position: relative;
+}
+
+.hero-logo {
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto;
+  
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero .btn {
+  padding: 12px 30px;
+  border: none;
+  background-color: #8c1d40;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #a62752;
+}
+
+/* --- Featured Section --- */
+.featured h3 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.featured-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.featured-grid img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  background-color: #8c1d40;
+  color: white;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a62752;
+}
+
+/* --- Services Section --- */
+.services h3 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.services-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 1 200px; /* flexible width for responsive design */
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.service p {
+  font-weight: 500;
+  color: #333;
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #123f5a;
+  color: white;
+  padding: 60px 40px 20px 40px;
+  font-family: Arial, sans-serif;
+  text-align: left; /* keep text left-aligned inside each column */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center; /* centers the 3 columns horizontally */
+  gap: 60px; /* space between columns */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+  max-width: 1200px; /* keeps footer from stretching too wide */
+  margin: 0 auto; /* center the container on the page */
+}
+
+.footer-section {
+  flex: 1 1 200px; /* allows flexible width but minimum 200px */
+}
+
+.footer-section h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #f7f3f0;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  color: #f7f3f0;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer-section a:hover {
+  color: #8c1d40;
+}
+
+.footer-section.social a img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.footer-section.social a img:hover {
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 15px;
+  font-size: 13px;
+  color: #ccc;
+}
